@@ -33,8 +33,9 @@ public class testclass {
                     System.out.println("enter amount to withdraw");
                     double amount = in.nextDouble();
                     double balance = Mathias.getBalance();
+                    Currency();
                     Mathias.setBalance(balance - amount);
-                    System.out.println("Current balance: " + Mathias.getBalance());
+                    System.out.println("Current balance: " + Mathias.getBalance() + "DKK");
                     break;
 
                 case 2:
@@ -42,16 +43,24 @@ public class testclass {
                     amount = in.nextDouble();
                     balance = Mathias.getBalance();
                     Mathias.setBalance(balance + amount);
-                    System.out.println("Current balance; " + Mathias.getBalance());
+                    System.out.println("Current balance; " + Mathias.getBalance()+ "DKK");
                     break;
-
-
             }
-
         }
 
+    }
 
+    public static void Currency(){
+        Scanner in = new Scanner(System.in);
+        System.out.println("Select currency: 1) DKK 2) Euro");
+        switch (in.nextInt()){
+            case 1:
+                break;
 
+            case 2:
+                double amount = in.nextDouble();
+                double euro = amount / 7.5;
+        }
 
     }
 }
