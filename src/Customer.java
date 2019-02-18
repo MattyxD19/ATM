@@ -43,7 +43,7 @@ public class Customer {
     }
 
     public int getAccountNo() {
-        accountNo = 2255;
+        accountNo = 2334;
         return accountNo;
     }
 

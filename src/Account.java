@@ -8,6 +8,15 @@ public class Account {
 
 
 
+    public int getAccountNumber() {
+        return accountNumber;
+    }
+
+    public void setAccountNumber(int accountNumber) {
+        this.accountNumber = accountNumber;
+    }
+
+
 
     public double withdraw(double amount){
 
@@ -16,6 +25,11 @@ public class Account {
 
     public double getBalance() {
 
-        return 0;
+        return balance;
+    }
+
+    public void setBalance(double balance) {
+        this.balance = balance;
+
     }
 }

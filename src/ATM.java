@@ -11,12 +11,7 @@ public class ATM {
         this.atmID = atmID;
     }
 
-    public void display(){
-        Customer firstCustomer = new Customer();
-
-        Scanner in = new Scanner(System.in);
-        int pin = in.nextInt();
-        System.out.println("Enter pin-code");
+    public void display() {
 
     }
 
